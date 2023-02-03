@@ -43,7 +43,7 @@ RUN mkdir -p /root/.android \
 ADD packages.txt /sdk
 RUN sdkmanager --package_file=/sdk/packages.txt
 
-ENV TOOL_VER_RUBY="2.5.1"
+ENV TOOL_VER_RUBY="2.6.9"
 # install Ruby from source
 #  from source: mainly because of GEM native extensions,
 #  this is the most reliable way to use Ruby on Ubuntu if GEM native extensions are required
